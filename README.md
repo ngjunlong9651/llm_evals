@@ -7,12 +7,13 @@ Start from the failures you observe, validate your judge, and put error bars on 
 |---|---|
 | `evals_learning.ipynb` | The lecture notebook (concepts, labs, checkpoints, exercises, glossary, reading list) |
 | `evals.py` | Graders, a simulated LLM judge, bootstrap CIs, Cohen's kappa, judge bias correction |
-| `requirements.txt` | numpy, pandas, matplotlib, ipykernel |
+| `langchain_evals_experiment.ipynb` | A small offline experiment in LangChain / LangSmith / openevals vocabulary (datasets, evaluators, experiments, repetitions, judge validation) |
+| `requirements.txt` | numpy, pandas, matplotlib, ipykernel, langchain-core, langsmith, openevals |
 
-Runs **offline**, no API keys.
+Runs **offline**, no API keys. The LangChain experiment sets the tracing sample rate to 0 so nothing is sent to LangSmith's cloud.
 
 ## Slides
-A companion slide deck lives on the author's Claude account (private link, may not open for you): https://claude.ai/artifact/Rvbz1Na7RMnTUU8ZBRGmx8
+A companion slide deck lives on the author's Claude account (shared link): https://claude.ai/artifact/Rvbz1Na7RMnTUU8ZBRGmx8
 
 ## Setup
 ```bash
